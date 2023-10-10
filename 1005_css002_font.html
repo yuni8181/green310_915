@@ -99,6 +99,55 @@
          .box p:last-child {font: 300 italic small-caps xx-large/0.8 'Nanum Myeongjo', serif;}
     </style>
 
+
+
+<h2>color</h2>
+
+<p>컬러는 글자의 색을 나타내며 , backgound,border, shadow 등과 같이
+    컬러를 사용하는 공간에서 표현방식은 모두 같다
+</p>
+
+<ul class="color">
+    <li>이름지정 : red, white, black</li>
+    <li>핵사코드지정 : #000000(검정) , #ffffff, 단 코드이름이 중복될경우 3자리로도 가능
+                    #000 , #fff  </li>
+    <li>RGB숫자지정 : rgb(0,0,0)검정 , rgb(255,255,255)흰색</li>
+    <li>RGBA 숫자지정 : A - 투명도를 나타내는 alpha 값으로 0~1까지 소수점표기</li>
+    <li>opacity :투명도 지정한 모든 요소의 내부내용이 투명해진다.  </li>
+
+</ul>
+
+<h3>그라디언트</h3>
+<p class="grd">liner / radial 과 같은 형태로 gradient 를 지정할수 있으며 
+    각각의 내용들은 진행방향과 조합된 컬러로 작성할수 있다.
+</p>
+
+
+
+<style>
+ .color {background-color: aquamarine;}
+    .color li:nth-child(1) {background-color: aqua;}
+    .color li:nth-child(2) {background-color: #ffff00;}
+    .color li:nth-child(3) {background-color: rgb(00, 255, 00);}
+    .color li:nth-child(4) {background-color: rgba(00, 00, 00, 0.5);
+                            color: #fff;}
+    .color li:nth-child(5) {background-color: blue;
+                            color: #fff;
+                        opacity: 0.5;}
+    .grd {background: linear-gradient(0deg,#000,red 30%, #fff);}
+
+h3 {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);}
+
+
+
+
+body {padding-bottom: 500px;}
+
+</style>
+
+
+
+
     
 </body>
 </html>
