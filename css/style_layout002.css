@@ -20,17 +20,16 @@ a {text-decoration: none;
 
 /* 박스4-1,박스4-2,박스4-3 의 가로정렬 */
 
-.box5 {float:left;
+.boxB {display: flex;}
+.box5 {order: 2;
         width: 20%;}
-.box6 {float:left ;
+.box6 {order: 1;
 width: 60%;}
-.box7 {float:right ;
+.box7 {
 width: 20%;}
 
 
-.boxB:after {content: "";
-            display: block;
-            clear: both;}
+
 
 
 /* 두번째레이아웃설정 */

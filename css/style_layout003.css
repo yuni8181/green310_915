@@ -1,0 +1,75 @@
+/* 언어설정 */
+@charset 'UTF';
+
+/* reset */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+
+/* 2단레이아웃설정 */
+
+#wrap {width: 1200px;
+    margin: 0 auto;}
+
+
+/* 헤더설정 */
+.box1 {height: 120px;
+        background-color: #ccc;}
+
+/*사이드바와 본문 가로정렬 */
+.box2 {float: left;
+        width: 300px;
+        background-color: #eee;
+        height: 100%;}
+.box3 {float: left;
+        width: 900px;
+        }
+
+/* 박스A설정 */
+.boxA {height: 600px;}
+.boxA:after {content: "";
+            display: block;
+            clear: both;}
+
+/* 푸터설정 */
+
+.box4 {height: 100px;
+    background-color: #333;}
+
+
+    /* 3단레이아웃 */
+
+    #wrapper {width: 1200px;
+            margin: 0 auto;}
+
+    /* 헤더설정 */
+    .box11 {height: 120px;
+            background-color: #ccc;}
+    
+    /* 사이드바,본문,사이드바 가로정렬 */
+    .box12>div {height: 100%;}
+    .box12-1 {float: left;width: 250px;
+            background-color: #eee;}
+    .box12-2 {float: left;width: 800px;}
+    .box12-3 {float: left;width: 150px;
+            background-color: #eee;}
+
+
+    /* 박스 12 설정 */
+    .box12 {height: 600px;}
+    .box12:after {content: ""; display: block;
+                clear: both;}
+
+            /* 푸터설정 */
+            .box13 {height: 100px;
+                background-color: #333;}
+
+
+
+
+
+
+
+    body {padding-bottom: 500px;}
