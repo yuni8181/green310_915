@@ -1,0 +1,33 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* reset */
+* {margin: 0;
+padding: 0;}
+a {text-decoration: none;
+color: #000;}
+ul,ol {list-style: none;}
+img {border: none;
+    vertical-align: bottom;}
+
+
+    /*미디어쿼리구간 */
+
+
+    /* 768px 이상구간설정 */
+@media(min-width:768px){
+
+
+}
+
+    /* 1290px 이상구간설정 */
+@media(min-width:1290px){
+
+    .box1-inner,.box2-inner,.box3-inner,.box4-inner,.box5-inner,.box6-inner,.box7-inner,.box8-inner,.box9-inner,.box10-inner{
+
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+
+}
