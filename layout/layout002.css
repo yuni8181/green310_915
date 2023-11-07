@@ -54,7 +54,7 @@ transition: all 0.8s;}
 
 .box8-inner .container li:nth-child(2) {background-color: aquamarine;
 transform: scale(1);}
-.box8-inner .container ul:hover {left: -200%;}
+/* .box8-inner .container ul:hover {left: -200%;} */
 
 .box8-inner p {position: absolute;
 width: 50px;
@@ -159,7 +159,7 @@ flex-wrap: nowrap;
 width: 180%;
 height: 100%;
 position: absolute;
-left:-40%;
+left:00%;
 top: 0;
 transition: all 0.8s;}
 .box8-inner .container li {width: 60%;
@@ -169,7 +169,7 @@ transition: all 0.8s;}
 
 .box8-inner .container li:nth-child(2) {background-color: aquamarine;
     transform: scale(1);}
-.box8-inner .container ul:hover {left: -60%;}
+/* .box8-inner .container ul:hover {left: -60%;} */
 
 .box8-inner p {position: absolute;
     width: 50px;
