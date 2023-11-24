@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #section1 {
+    position: relative;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+    </style>
+
+    
+</head>
+<body>
+
+    <header>
+        <h1>Your Header Content</h1>
+    </header>
+
+    <section id="section1">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="https://picsum.photos/id/2/1500/1500" alt="Slide 1">
+                <img src="https://picsum.photos/id/3/1500/1500" alt="Slide 2">
+                <img src="https://picsum.photos/id/1/1500/1500" alt="Slide 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Your Footer Content</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    let count = 0;
+
+    function nextSlide() {
+        count++;
+        if (count > 2) {
+            count = 0;
+        }
+        updateSlide();
+    }
+
+    function prevSlide() {
+        count--;
+        if (count < 0) {
+            count = 2;
+        }
+        updateSlide();
+    }
+
+    function updateSlide() {
+        slider.style.transform = `translateX(${-count * 100}%)`;
+    }
+
+    // Optional: Auto slide change every 3 seconds
+    setInterval(nextSlide, 3000);
+
+    // Event listeners for manual navigation
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (event.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

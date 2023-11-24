@@ -75,14 +75,52 @@
  2X2=4<br> -->
 
  <script>
-
-    for(var i = 1; i<10; i++){
-
+ document.write('<h1>2단</h1>')
+    
+ for(var i = 1; i<10; i++){
+       
         document.write('2X'+i+'='+(2*i)+'<br>')
+    }
+
+    document.write('<h1>3단</h1>')
+    
+ for(var i = 1; i<10; i++){
+       
+        document.write('3X'+i+'='+(3*i)+'<br>')
+    }
+
+
+    
+    document.write('<h1>4단</h1>')
+    
+ for(var i = 1; i<10; i++){
+       
+        document.write('4X'+i+'='+(4*i)+'<br>')
     }
  </script>
 
 
+<h3> 반복문안에는 반복문을 추가적으로 넣을수 있습니다!!!!!!<br>
+2단 ~~~~~9단까지 작성 </h3>
+<p> 반복은 2번진행되어야함 2~9까지 하나 , 1~9까지 하나 </p>
+
+
+<script>
+
+for(var ai=2; ai<10; ai++){
+
+
+    document.write('<h1>'+ai+'단</h1>')
+    for(var bi=1; bi<10; bi++){
+        var ci=ai*bi
+
+        document.write(ai+'X'+bi+'='+ci+'<br>')
+
+
+    }
+}
+
+</script>
 
     
 </body>
